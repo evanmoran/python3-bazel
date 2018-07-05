@@ -3,9 +3,9 @@
 LATEST_VERSION = "3.6.4"
 LATEST_DOT_VERSION =  "3.6"
 LATEST_JOIN_VERSION =  "36"
-MAC_LATEST = "mac/v" + VERSION + "/"
-WIN_LATEST = "windows/" + VERSION + "/"
-LX_LATEST = "linux/" + VERSION + "/"
+MAC_LATEST = "mac/v" + LATEST_VERSION + "/"
+WIN_LATEST = "windows/" + LATEST_VERSION + "/"
+LX_LATEST = "linux/" + LATEST_VERSION + "/"
 
 # Specific Version
 JOINED_36 = "36"
