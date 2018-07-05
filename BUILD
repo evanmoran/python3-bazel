@@ -1,13 +1,20 @@
 
-# Latest
-
+# Latest Definitions
 LATEST_VERSION = "3.6.4"
 LATEST_DOT_VERSION =  "3.6"
 LATEST_JOIN_VERSION =  "36"
-
 MAC_LATEST = "mac/v" + VERSION + "/"
 WIN_LATEST = "windows/" + VERSION + "/"
+LX_LATEST = "linux/" + VERSION + "/"
 
+# Specific Version
+JOINED_36 = "36"
+DOT_36 = "3.6"
+MAC_364 = "mac/v3.6.4/"
+WIN_364 = "windows/v3.6.4/"
+LX_364 = "linux/v3.6.4/"
+
+# Latest
 cc_library(
     name = "mac-python-library",
     srcs = [MAC_LATEST + "lib/libpython" + LATEST_DOT_VERSION + "m.a"],
@@ -25,13 +32,6 @@ cc_library(
 )
 
 # 3-6-4
-
-JOINED_36 = "36"
-DOT_36 = "3.6"
-MAC_364 = "mac/v3.6.4/"
-WIN_364 = "windows/v3.6.4/"
-LX_364 = "windows/v3.6.4/"
-
 cc_library(
     name = "mac-python-library-3-6-4",
     srcs = [MAC_364 + "lib/libpython" + DOT_36 + "m.a"],
@@ -41,7 +41,7 @@ cc_library(
     linkopts = ["-v"]
 )
 cc_library(
-    name = "windows-python-library",
+    name = "windows-python-library-3-6-4",
     srcs = [WIN_364 + "libs/python" + JOIN_36 + ".lib"],
     hdrs = glob([WIN_364 + "include/**/*.h"]),
     strip_include_prefix = WIN_364 + "include/python" + DOT_36 + "m",
