@@ -8,7 +8,7 @@ WIN_LATEST = "windows/" + LATEST_VERSION + "/"
 LX_LATEST = "linux/" + LATEST_VERSION + "/"
 
 # Specific Version
-JOINED_36 = "36"
+JOIN_36 = "36"
 DOT_36 = "3.6"
 MAC_364 = "mac/v3.6.4/"
 WIN_364 = "windows/v3.6.4/"
